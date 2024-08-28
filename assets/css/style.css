@@ -4,6 +4,7 @@
     --color-heading: #FDFDFF;
     --color-base: #1A1A1A;
     --color-base2: #151515;
+    --color-base3: #303030;
     --color-brand: #B8ACF1;
     --color-brand2: #6148E0;
     --color-brand3: #F5F4FF;
@@ -71,9 +72,24 @@ img {
     justify-content: center;
     font-size: 32px;
     background-color: var(--color-brand);
-    color: var(--color-base);
+    color: var(--color-brand2);
 }
-
+.service{
+    border: 2px solid var(--color-base3);
+    font-family: urbanist;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color-body);
+}
+.service:hover{
+    border: 0px solid var(--color-base3);
+}
+.servicHead{
+    color: var(--color-brand3);
+    font-size: 24px;
+    font-family: amaranth;
+    font-weight: 600;
+}
 /* NAVBAR */
 .navbar {
     background-color: var(--color-base);
@@ -180,6 +196,7 @@ img {
     transform: scale(1.1);
 }
 
+
 /* CONTACT */
 #contact .form-control {
     background-color: var(--color-base);
@@ -213,6 +230,7 @@ img {
     justify-content: center;
     background-color: var(--color-base);
     border-radius: 100px;
+    
     
     
     font-size: 24px;
