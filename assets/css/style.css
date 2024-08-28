@@ -74,6 +74,7 @@ img {
     background-color: var(--color-brand);
     color: var(--color-brand2);
 }
+/* Skills */
 .service{
     border: 2px solid var(--color-base3);
     font-family: urbanist;
@@ -89,6 +90,20 @@ img {
     font-size: 24px;
     font-family: amaranth;
     font-weight: 600;
+}
+/* Projects */
+.project{
+    border: 2px solid var(--color-base3);
+    font-family: urbanist;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color-body);
+}
+.project:hover{
+    border: 0px solid var(--color-base3);
+}
+.project-image{
+    height: 350px;
 }
 /* NAVBAR */
 .navbar {
@@ -141,10 +156,10 @@ img {
     margin: 0 0 0 3em;
 }
 /* BTN */
-.btn {
+/* .btn {
     padding: 12px 28px;
     font-weight: 700;
-}
+} */
 
 .btn-brand {
     background-color: var(--color-brand2);
@@ -154,17 +169,51 @@ img {
     height: 44px;
     width: 180px;
     text-align: center;
+    padding-bottom: 12px;
 }
 
 .btn-brand:hover,
 .btn-brand:focus {
-    background-color: var(--color-brand2);
-    color: var(--color-headin);
+    background-color: var(--color-body);
+    color: var(--color-brand2);
     border-color: var(--color-brand2);
 }
 
+.card-btn{
+
+    background-color: var(--color-brand2);
+    border: none;
+    color: var(--color-heading);
+    padding: 14px 32px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 100px;
+    height: 36px;
+   
+}
+.card-btn:hover
+.card-btn:focus{
+    background-color: var(--color-body);
+    color: var(--color-brand2);
+    border-color: var(--color-brand2);
+}
+#card-btn
+{
+  display: flex;
+    justify-content: space-between;
+    align-content: center;
+   
+}
+
+#project-btn{
+  display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0 -24em 0 0;
+}
 .link-custom {
-    font-weight: 700;
+    font-weight: 600;
     position: relative;
 }
 
