@@ -125,25 +125,6 @@ img {
     color: var(--color-brand);
 }
 
-@media (min-width: 992px) {
-    .navbar {
-        min-height: 100vh;
-        width: var(--sidbar-width);
-
-        background: linear-gradient(rgba(28, 26, 26, 0.8), rgba(28, 26, 26, 0.8)), url(../images/leftside-img.png);
-        background-size: cover;
-        background-position: center;
-    }
-
-    .navbar-brand img {
-        border: 8px solid var(--color-brand);
-    }
-
-    /* CONTENT WRAPPER */
-    #content-wrapper {
-        padding-left: var(--sidbar-width);
-    }
-}
 /* about */
 #about{
     height: 100vh;
@@ -154,6 +135,9 @@ img {
     align-items: center;
     padding: 0 10%;
     margin: 0 0 0 3em;
+}
+.Reviewer{
+    color: var(--color-brand);
 }
 /* BTN */
 /* .btn {
@@ -249,8 +233,10 @@ img {
 /* CONTACT */
 #contact .form-control {
     background-color: var(--color-base);
-    border-color: var(--color-base);
+    border-color: var(--color-base3);
     color: var(--color-body);
+    border-radius: 8px;
+
 }
 
 #contact .form-control:focus {
@@ -264,6 +250,7 @@ img {
 
 #contact input.form-control {
     height: 44px;
+    
 }
 
 /* SOCIAL ICONS */
@@ -277,16 +264,57 @@ img {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-base);
+    background-color: var(--color-base2);
     border-radius: 100px;
-    
-    
-    
+    border-color: var(--color-base3);
     font-size: 24px;
 }
+.fa-twitter{
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-base2);
+    border-radius: 100px;
+    border-color: var(--color-base3);
+    font-size: 24px;
+}
+.fa-solid, .fa-regular{
+    color: rgb(238, 188, 7);
+}
+
 @media (max-width: 550px) {
     #about{
 
         margin: 0 0 0 .5em;
+    }
+
+    #project-btn{
+        display: grid;
+          justify-content: space-between;
+          align-content: center;
+         
+      }
+  
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        min-height: 100vh;
+        width: var(--sidbar-width);
+
+        background: linear-gradient(rgba(28, 26, 26, 0.8), rgba(28, 26, 26, 0.8)), url(../images/leftside-img.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .navbar-brand img {
+        border: 8px solid var(--color-brand);
+    }
+
+    /* CONTENT WRAPPER */
+    #content-wrapper {
+        padding-left: var(--sidbar-width);
     }
 }
