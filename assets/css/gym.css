@@ -1,0 +1,151 @@
+header {
+    padding: 2rem;
+}
+.arrow {
+    width: 3rem;
+    height: auto;
+}
+
+p, li {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.btn {
+    border-radius: 10rem;
+    padding: .7rem 2rem;
+    font-size: 1rem;
+}
+
+.btn-white {
+    background-color: #fff;
+}
+
+.btn-primary {
+    background-color: #6148e0;
+    border: none;
+    outline: none;
+}
+
+.btn-dark {
+    background-color: #151515;
+}
+
+.btn-white:hover {
+    background-color: #f5f4ff;
+    color: var(--color-brand4);
+}
+
+.btn-dark:hover {
+    background-color: #fff;
+    color: #151515;
+}
+
+.btn-primary:hover {
+    background-color: #452fb3;
+}
+
+.lead {
+    text-align: center;
+    color: #BEBEBE;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2rem;
+    word-wrap: break-word;
+}
+
+.frame-ctn {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.frame-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame1, .frame2, .frame3, .frame4 {
+    background-color: var(--color-base);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.role-img {
+    width: auto;
+    height: 60vh;
+}
+
+.role-ctn {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.pro-ctn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mockup-ctn {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.mockup {
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+}
+
+.mockup-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 750px) {
+    .lead {
+        font-size: 1rem;
+        line-height: 1.1rem;
+    }
+
+    .role-ctn {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+        /* padding: 2rem 0; */
+    }
+
+    .frame-ctn {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        gap: .2rem;
+    }
+
+    .role-img {
+        /* margin-top: 1rem; */
+        width: auto;
+        height: 40vh;
+    }
+
+    .pro-ctn {
+        flex-direction: column;
+    }
+
+    .mockup {
+        width: 100%;
+    }
+
+    .mockup-parent {
+        grid-template-columns: 1fr;
+    }
+}

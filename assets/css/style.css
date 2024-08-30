@@ -124,43 +124,7 @@ img {
 .navbar .nav-link.active {
     color: var(--color-brand);
 }
-/*-----caseStudy2 Starts here-----*/
 
-.persona {
-    border: 16px solid rgba(48, 48, 48, 1);
-    border-radius: 12px;
-}
-
-.persona > .personal-info img{
-    width: 409px;
-    height: 409px;
-}
-
-.persona > .personal-info ul li {
-    padding: .5rem;
-    /* font-size: 32px; */
-}
-
-.persona .question {
-    font-size: 24px;
-    width: 163px;
-}
-
-.persona .text {
-    font-size: 32px;
-    color: #EAEBF6;
-}
-
-.persona .user-detail h3 {
-    color: #9F9F9F;
-    font-size: 36px;
-    line-height: 43.2px;
-}
-
-.persona .user-detail {
-    font-size: 24px;
-}
-/*-----caseStudy2 Ends here-----*/
 /* about */
 #about{
     height: 100vh;
