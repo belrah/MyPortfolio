@@ -189,7 +189,10 @@ img {
     align-content: center;
    
 }
-
+.head-color{
+    color: var(--color-brand);
+    font-size: 24px;
+}
 #project-btn{
   display: flex;
     justify-content: space-between;
@@ -199,6 +202,7 @@ img {
 .link-custom {
     font-weight: 600;
     position: relative;
+    color: var(--color-heading);
 }
 
 .link-custom::after {
