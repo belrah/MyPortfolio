@@ -1,0 +1,166 @@
+header {
+    padding: 2rem;
+}
+.arrow {
+    width: 3rem;
+    height: auto;
+}
+
+.btn {
+    border-radius: 10rem;
+    padding: .7rem 2rem;
+    font-size: 1rem;
+}
+
+.btn-white {
+    background-color: #fff;
+}
+
+.btn-primary {
+    background-color: #6148e0;
+    border: none;
+    outline: none;
+}
+
+.btn-dark {
+    background-color: #151515;
+}
+
+.btn-white:hover {
+    background-color: #f5f4ff;
+    color: var(--color-brand4);
+}
+
+.btn-dark:hover {
+    background-color: #fff;
+    color: #151515;
+}
+
+.btn-primary:hover {
+    background-color: #452fb3;
+}
+
+.lead {
+    text-align: center;
+    color: #BEBEBE;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2rem;
+    word-wrap: break-word;
+}
+
+.first-grid {
+    min-width: 15rem;
+    border-left: 5px solid var(--color-brand4);
+    font-size: 2rem;
+    padding: 1rem 4rem 1rem 1rem;
+}
+
+.text-span {
+    color: var(--color-brand4);
+}
+
+p, li {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.grid-ctn {
+    display: flex;
+}
+
+.icon {
+    width: 7rem;
+    height: auto;
+}
+
+.box-ctn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.box1, .box2, .box3, .box4 {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin: 1rem 0;
+}
+
+.box1 {
+    background: #FFD600;
+}
+
+.box2 {
+    background: #DB0000;
+}
+
+.box3 {
+    background: #0D99FF;
+}
+
+.box4 {
+    background: #B60071;
+}
+
+.btn-footer {
+    color: #BEBEBE;
+    border: 1px solid #BEBEBE;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.btn-footer:hover{
+    border-color: var(--color-brand4);
+    text-decoration: underline;
+}
+
+.footer-icons-ctn {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.study {
+    display: inline;
+}
+
+@media screen and (max-width: 750px) {
+    .lead {
+        font-size: 1rem;
+        line-height: 1.1rem;
+    }
+    .first-grid {
+        border: none;
+        border-top: 3px solid var(--color-brand4);
+        padding: 1rem .5rem;
+    }
+    .grid-ctn {
+        flex-direction: column;
+    }
+    .box-ctn {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .icon {
+        width: 5rem;
+    }
+
+    .footer-icons-ctn {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: .5rem;
+    }
+
+    .study {
+        display: hidden;
+    }
+}
