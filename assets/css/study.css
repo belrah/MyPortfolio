@@ -121,7 +121,11 @@ p, li {
     border-color: var(--color-brand4);
     text-decoration: underline;
 }
-
+.game-cover{
+    width: 100%;
+    height: 30vh;
+    
+}
 .footer-icons-ctn {
     display: flex;
     justify-content: center;
