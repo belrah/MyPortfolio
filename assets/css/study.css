@@ -63,6 +63,7 @@ header {
 p, li {
     font-size: 1.5rem;
     text-align: justify;
+    font-family: urbanist;
 }
 
 .grid-ctn {
@@ -134,6 +135,9 @@ p, li {
 
 .study {
     display: inline;
+}
+h1{
+    font-family: Amaranth;
 }
 
 @media screen and (max-width: 750px) {
