@@ -144,7 +144,16 @@ img {
     padding: 12px 28px;
     font-weight: 700;
 } */
+.button{
+background-color: var(--color-brand2);
+padding: 4% 4% 4% 10%;
+width: 160px;
+font-size: medium;
+font-weight: 800;
+font-size: 16px;
+border-radius: 100px;
 
+}
 .btn-brand {
     background-color: var(--color-brand2);
     border-color: var(--color-brand2);
