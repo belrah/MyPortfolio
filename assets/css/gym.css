@@ -7,10 +7,20 @@ header {
 }
 
 p, li {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: justify;
+    font-family: urbanist;
 }
-
+h1,h2,h3,h4,h5,h6 {
+    color: var(--color-heading);
+    font-weight: 600;
+    font-family: Amaranth;
+  
+}
+h2{
+    font-size: 44px;
+    font-weight: 500;
+}
 .btn {
     border-radius: 10rem;
     padding: .7rem 2rem;
@@ -116,6 +126,11 @@ p, li {
         font-size: 1rem;
         line-height: 1.1rem;
     }
+    p, li {
+        font-size: 1rem;
+       text-align: justify;
+        font-family: urbanist;
+    }
 
     .role-ctn {
         display: flex;
@@ -147,5 +162,13 @@ p, li {
 
     .mockup-parent {
         grid-template-columns: 1fr;
+    }
+    .btn {
+        border-radius: 10rem;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+    }
+    #video-tifi{
+        margin: 0;
     }
 }

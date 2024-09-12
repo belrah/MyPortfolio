@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --color-body: #BEBEBE;
     --color-heading: #FDFDFF;
@@ -20,10 +21,13 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
     color: var(--color-heading);
-    font-weight: 700;
+    font-weight: 600;
+    font-family: Amaranth;
   
 }
-
+/* h2{
+    font-size: 80px;
+} */
 a {
     text-decoration: none;
     color: var(--color-body);
@@ -31,15 +35,15 @@ a {
 }
 
 a:hover {
-    color: var(--color-brand);
+    color: var(--color-heading);
 }
 
 img {
     width: 100%;
+
 }
 p, li {
-    /* font-size: 1.5rem;
-    text-align: justify; */
+  
     font-family: urbanist;
 }
 .text-brand {
@@ -51,13 +55,13 @@ p, li {
 }
 
 .full-height {
-    min-height: 100vh;
+    min-height: 70vh;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     border-bottom: 2px solid rgba(255,255,255, 0.1);
 }
 
@@ -70,15 +74,34 @@ p, li {
 }
 
 .iconbox {
-    width: 60px;
-    height: 60px;
+    width: 48px;
+    height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 32px;
-    background-color: var(--color-brand);
+    font-size: 24px;
+    background-color: var(--color-base3);
+    color: var(--color-brand3);
+}
+.iconboxs {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.iconbox:hover {
+    background-color: var(--color-heading);
     color: var(--color-brand2);
 }
+.tools-icon{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
 /* Skills */
 .service{
     border: 2px solid var(--color-base3);
@@ -145,19 +168,74 @@ p, li {
     color: var(--color-brand);
 }
 /* BTN */
-/* .btn {
-    padding: 12px 28px;
-    font-weight: 700;
-} */
-.button{
-background-color: var(--color-brand2);
-padding: 4% 4% 4% 10%;
-width: 160px;
-font-size: medium;
-font-weight: 800;
-font-size: 16px;
-border-radius: 100px;
 
+.button{
+    width: 150px;
+    padding: 2% 4% 2% 10%;
+    border-style: solid;
+    border-color: var(--color-body);
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--color-body);
+    transition: 0.4s ease-in;
+ }
+ .buttons{
+    width: 150px;
+    padding: 2% 4% 2% 10%;
+    border-style: solid;
+  border-color: var(--color-body);
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--color-body);
+    transition: 0.4s ease-in;
+ }
+
+ .button, .buttons:hover{
+    background-color: var(--color-brand2);
+    color: var(--color-brand3);
+    border-style: solid;
+    border-color: var(--color-brand2);
+ }
+ .btn-footer {
+    color: var(--color-body);
+    border: 1px solid #BEBEBE;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    color: var(--color-body);
+    transition: 0.4s ease-in;
+}
+.btn {
+    border-radius: 100rem;
+    padding: .7rem 2rem;
+    font-size: 1rem;
+}
+.btn-footer:hover{
+    text-decoration: underline;
+    background-color: var(--color-brand2);
+    color: var(--color-brand3);
+    border-style: solid;
+    border-color: var(--color-brand2);
+}
+.footer-icons-ctn {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+ .cardbody{
+    font-size: 18px;
+ }
+ .pro-header{
+    color: var(--color-brand);
+ }
+
+.card-image{
+    max-height:20%;
 }
 .btn-brand {
     background-color: var(--color-brand2);
@@ -168,22 +246,19 @@ border-radius: 100px;
     width: 180px;
     text-align: center;
     padding-bottom: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    justify-content: center;
 }
 
 .btn-brand:hover,
 .btn-brand:focus {
-    background-color: var(--color-body);
+    background-color: var(--color-heading);
     color: var(--color-brand2);
     border-color: var(--color-brand2);
 }
-.work-icon{
-    color: var(--color-brand3);
-}
-.work-icon:hover{
-    color: var(--color-brand);
-}
-.card-btn{
 
+.card-btn{
     background-color: var(--color-brand2);
     border: none;
     color: var(--color-heading);
@@ -221,7 +296,7 @@ border-radius: 100px;
 .link-custom {
     font-weight: 600;
     position: relative;
-    color: var(--color-heading);
+    color: var(--color-body);
 }
 
 .link-custom::after {
@@ -233,10 +308,12 @@ border-radius: 100px;
     left: 0;
     top: 110%;
     transition: all 0.4s;
+
 }
 
 .link-custom:hover::after {
     width: 100%;
+   
 }
 
 /* CARD */
@@ -250,6 +327,7 @@ border-radius: 100px;
 
 .card-custom:hover .card-custom-image img {
     transform: scale(1.1);
+    
 }
 
 
@@ -272,41 +350,19 @@ border-radius: 100px;
 }
 
 #contact input.form-control {
-    height: 44px;
+    height: 48px;
     
 }
 
-/* SOCIAL ICONS */
-/* .social-icons {
 
-} */
-
-.social-icons a {
-    width: 40px;
-    height: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color-base2);
-    border-radius: 100px;
-    border-color: var(--color-base3);
-    font-size: 24px;
-    color: var(--color-brand3);
-}
-/* .fa-twitter {
-    width: 40px;
-    height: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color-base2);
-    border-radius: 100px;
-    border-color: var(--color-base3);
-    font-size: 24px;
-} */
 .fa-star{
     color: rgb(238, 188, 7);
 }
+
+.fa-square-x-twitter{
+    color: var(--color-brand3)
+}
+
 
 @media (max-width: 550px) {
     #about{
@@ -320,6 +376,29 @@ border-radius: 100px;
         align-items: flex-start;
          
       }
+      .iconboxs {
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+    }
+ 
+    .btn-brand {
+      
+        height: 40px;
+        width: 120px;
+    
+        padding: 12px;
+        font-size: 16px;
+      
+      
+    }
+    .btn {
+        padding: .5rem 1rem;
+        font-size: 1rem;
+    }
   
 }
 
