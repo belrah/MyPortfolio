@@ -7,8 +7,9 @@ header {
 }
 
 p, li {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: justify;
+    font-family: urbanist;
 }
 
 .btn {
@@ -99,7 +100,9 @@ p, li {
     grid-template-columns: 1fr;
     gap: 2rem;
 }
-
+#video-tifi{
+    margin-top: 0% auto;
+}
 .mockup {
     margin: 0 auto;
     width: 70%;
@@ -137,9 +140,7 @@ p, li {
         height: 40vh;
     }
 
-    .pro-ctn {
-        flex-direction: column;
-    }
+
 
     .mockup {
         width: 100%;
