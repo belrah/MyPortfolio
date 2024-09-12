@@ -399,6 +399,9 @@ p, li {
         padding: .5rem 1rem;
         font-size: 1rem;
     }
+    .project-image{
+        height: 250px;
+    }
   
 }
 
