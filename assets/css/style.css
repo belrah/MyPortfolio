@@ -211,7 +211,7 @@ p, li {
 }
 .btn {
     border-radius: 100rem;
-    padding: .7rem 2rem;
+    /* padding: .7rem 2rem; */
     font-size: 1rem;
 }
 .btn-footer:hover{
@@ -247,7 +247,7 @@ p, li {
     text-align: center;
     padding-bottom: 12px;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     justify-content: center;
 }
 
