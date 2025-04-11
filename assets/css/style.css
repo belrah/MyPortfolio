@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
 :root {
     --color-body: #BEBEBE;
     --color-heading: #FDFDFF;
@@ -10,7 +14,7 @@
     --color-brand2: #6148E0;
     --color-brand3: #F5F4FF;
     --sidbar-width: 240px;
-    --font-base: "Amaranth";
+    --font-base: "Lato"; 
 }
 
 body {
@@ -22,7 +26,7 @@ body {
 h1,h2,h3,h4,h5,h6 {
     color: var(--color-heading);
     font-weight: 600;
-    font-family: Amaranth;
+    font-family: Lato;
   
 }
 /* h2{
@@ -44,7 +48,7 @@ img {
 }
 p, li {
   
-    font-family: urbanist;
+    font-family: Lato;
 }
 .text-brand {
     color: var(--color-brand);
@@ -116,7 +120,7 @@ p, li {
 .servicHead{
     color: var(--color-brand3);
     font-size: 24px;
-    font-family: amaranth;
+    font-family: Lato;
     font-weight: 600;
 }
 /* Projects */
