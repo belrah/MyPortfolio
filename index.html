@@ -3,64 +3,98 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="keywords" content="Mercy Belrah Kalu" />
-  <meta name="description" content="My Portfolio" />
+  <meta name="keywords" content="Mercy Kalu, Product Designer, UX Designer, UI Designer, Portfolio, Design, Nigeria" />
+  <meta name="description" content="Mercy Kalu - Creative Product Designer and Brand Identity Creator. Explore my portfolio of innovative design solutions and case studies." />
   <meta name="author" content="Mercy Kalu" />
   <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Mercy Kalu - Product Designer Portfolio" />
+  <meta property="og:description" content="Creative Product Designer and Brand Identity Creator showcasing innovative design solutions" />
+  <meta property="og:image" content="./assets/images/person.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mercykalu.com" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mercy Kalu - Product Designer" />
+  <meta name="twitter:description" content="Creative Product Designer and Brand Identity Creator" />
+  <meta name="twitter:image" content="./assets/images/person.jpg" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Mercy Kalu - Product Designer</title>
+  <title>Mercy Kalu - Product Designer | Creative Design Solutions</title>
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="./assets/css/bootstrap.min.css" as="style" />
+  <link rel="preload" href="./assets/css/style.css" as="style" />
+  <link rel="preload" href="./assets/images/person.jpg" as="image" />
+  
+  <!-- CSS Files -->
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="./assets/css/aos.css" />
   <link rel="stylesheet" href="./assets/css/line-awesome.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/optimized.css" />
 
+  <!-- Font optimization -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
+    rel="stylesheet"
+    media="print" 
+    onload="this.media='all'" />
 
-  <script src="https://kit.fontawesome.com/168fb1c8fd.js" crossorigin="anonymous"></script>
+  <!-- Defer non-critical JavaScript -->
+  <script src="https://kit.fontawesome.com/168fb1c8fd.js" crossorigin="anonymous" defer></script>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation" aria-label="Main navigation">
     <div class="container flex-lg-column">
-      <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+      <a class="navbar-brand mx-lg-auto mb-lg-4" href="#about" aria-label="Mercy Kalu - Product Designer">
         <span class="h3 fw-bold d-block d-lg-none">BelDesigns</span>
-        <img src="./assets/images/person.jpg" class="d-none d-lg-block rounded-circle" alt="profile" />
+        <img src="./assets/images/person.jpg" 
+             class="d-none d-lg-block rounded-circle" 
+             alt="Mercy Kalu - Product Designer profile photo"
+             width="120"
+             height="120"
+             loading="eager" />
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation menu">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto flex-lg-column text-lg-left">
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#about" aria-label="About section">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
+            <a class="nav-link" href="#services" aria-label="Services section">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#project">Projects</a>
+            <a class="nav-link" href="#project" aria-label="Projects section">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#tools">Tools</a>
+            <a class="nav-link" href="#tools" aria-label="Tools section">Tools</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#education">Education</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#reviews">Reviews</a>
+            <a class="nav-link" href="#education" aria-label="Education section">Education</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#reviews" aria-label="Reviews section">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" aria-label="Contact section">Contact</a>
           </li>
         </ul>
       </div>
@@ -72,21 +106,30 @@
   <div id="content-wrapper">
     <!-- TOP NAV -->
 
-    <section id="about" class="full-height px-lg-5">
+    <section id="about" class="hero-section px-lg-5">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-center min-vh-100">
           <div class="col-lg-10">
-            <h1 class="display-4 fw-bold" data-aos="fade-up">
-              Hi, i'm <span class="text-brand">Mercy Kalu</span> <br />
+            <h1 class="display-3 fw-bold mb-4" data-aos="fade-up">
+              Hi, I'm <span class="text-brand">Mercy Kalu</span> <br />
               a Product Designer
             </h1>
-            <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">
-              A creative Product Designer and Brand Identity Creator
+            <p class="lead mt-2 mb-5 text-readable" data-aos="fade-up" data-aos-delay="300">
+              A creative Product Designer and Brand Identity Creator passionate about 
+              crafting intuitive digital experiences that solve real-world problems.
             </p>
-            <div data-aos="fade-up" data-aos-delay="600">
+            <div class="d-flex flex-column flex-sm-row gap-3" data-aos="fade-up" data-aos-delay="600">
               <a href="https://docs.google.com/document/d/1gupESLJxXC8l6K04ucLdlPutRCCYZD1_BZSrEcFujtA/edit?usp=sharing"
-                class="btn btn-brand me-3">Check CV</a>
-              <a href="mailto: belrahj3@gmail.com" class="link-custom">Send a Mail 🖐
+                 class="btn btn-brand btn-enhanced"
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 aria-label="View Mercy Kalu's CV">
+                 <i class="fas fa-file-pdf me-2"></i>Check CV
+              </a>
+              <a href="mailto:belrahj3@gmail.com" 
+                 class="btn btn-outline-light btn-enhanced"
+                 aria-label="Send email to Mercy Kalu">
+                 <i class="fas fa-envelope me-2"></i>Send a Mail
               </a>
             </div>
           </div>
@@ -95,61 +138,56 @@
     </section>
 
     <!-- SERVICES -->
-    <section id="services" class="full-height px-lg-5">
+    <section id="services" class="section-spacing px-lg-5">
       <div class="container">
         <div class="row pb-4" data-aos="fade-up">
           <div class="col-lg-8">
             <h6 class="text-brand">SERVICES</h6>
-            <h1>Skills That i can Offer</h1>
+            <h2 class="display-5 fw-bold">Skills That I Can Offer</h2>
           </div>
         </div>
 
         <div class="row gy-4">
-          <div class="col-md-4" data-aos="fade-up">
-            <div class="service p-4 bg-base rounded-4 shadow-effect">
-              <div class="iconbox rounded-4">
-                <i class="fa fa-solid fa-pen-nib"></i>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="service p-4 bg-base rounded-4 shadow-effect h-100">
+              <div class="iconbox rounded-4 mb-4">
+                <i class="fas fa-palette"></i>
               </div>
-              <h5 class="mt-4 mb-2 servicHead">Product Design</h5>
-
-              <p>
-                I am focused on crafting intuitive and engaging digital
+              <h5 class="mb-3 servicHead">Product Design</h5>
+              <p class="text-readable">
+                I focus on crafting intuitive and engaging digital
                 experiences by designing user interfaces (UI) and optimizing
                 user experiences (UX) that prioritize user needs and
-                satisfaction
+                satisfaction.
               </p>
-              <!-- <a href="#" class="link-custom">Read More</a> -->
             </div>
           </div>
 
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="service p-4 bg-base rounded-4 shadow-effect">
-              <div class="iconbox rounded-4">
-                <i class="fa fa-solid fa-pen-nib"></i>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service p-4 bg-base rounded-4 shadow-effect h-100">
+              <div class="iconbox rounded-4 mb-4">
+                <i class="fas fa-trademark"></i>
               </div>
-              <h5 class="mt-4 mb-2 servicHead">Branding</h5>
-              <p>
-                I specializes in creating visually appealing, functional and
-                user-friendly websites using the WordPress platform using
-                customization options to build responsive websites that meet
-                client needs
+              <h5 class="mb-3 servicHead">Branding</h5>
+              <p class="text-readable">
+                I specialize in creating cohesive brand identities that tell
+                compelling stories. From logo design to complete brand systems,
+                I help businesses establish a strong visual presence.
               </p>
-              <!-- <a href="#" class="link-custom">Read More</a> -->
             </div>
           </div>
 
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-            <div class="service p-4 bg-base rounded-4 shadow-effect">
-              <div class="iconbox rounded-4">
-                <i class="fa fa-solid fa-database"></i>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service p-4 bg-base rounded-4 shadow-effect h-100">
+              <div class="iconbox rounded-4 mb-4">
+                <i class="fas fa-code"></i>
               </div>
-              <h5 class="mt-4 mb-2 servicHead">Web Development</h5>
-              <p>
+              <h5 class="mb-3 servicHead">Web Development</h5>
+              <p class="text-readable">
                 I excel at transforming design concepts into responsive,
-                interactive, and visually compelling websites with a clean and
-                efficient code using HTML, CSS, and JavaScript
+                interactive, and visually compelling websites with clean and
+                efficient code using HTML, CSS, and JavaScript.
               </p>
-              <!-- <a href="#" class="link-custom">Read More</a> -->
             </div>
           </div>
         </div>
@@ -157,159 +195,199 @@
     </section>
     <!-- tools section here -->
     <!-- WORK -->
-    <section id="project" class="full-height px-lg-5">
+    <section id="project" class="section-spacing px-lg-5">
       <div class="container">
-        <div class="row pb-4" data-aos="fade-up">
-          <div class="col-lg-8">
+        <div class="row pb-4 align-items-center justify-content-between" data-aos="fade-up">
+          <div class="col-lg-8 col-md-8">
             <h6 class="text-brand">MY CASE STUDIES</h6>
-
-            <div data-aos="fade-up" data-aos-delay="600" id="project-btn">
-              <h1 class="">Most Recent Case Studies</h1>
-              <a href="./screens/projects.html">see all projects</a>
-            </div>
+            <h1 class="mb-0">Most Recent Case Studies</h1>
+          </div>
+          <div class="col-lg-4 col-md-4 text-end">
+            <a href="./screens/projects.html" 
+               class="btn btn-outline-light btn-enhanced"
+               aria-label="View all projects">
+               See All Projects
+               <i class="fas fa-arrow-right ms-2"></i>
+            </a>
           </div>
         </div>
 
         <div class="row gy-4 mb-4">
 
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-custom project rounded-4 bg-base shadow-effect">
-              <div class="card-custom-image rounded-4">
-                <img class="rounded-4 project-image" src="./assets/images/convey.png" alt="" />
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-custom project rounded-4 bg-base shadow-effect h-100 d-flex flex-column">
+              <div class="card-custom-image rounded-4 overflow-hidden">
+                <img class="rounded-4 w-100 object-fit-cover" 
+                     src="./assets/images/convey.png" 
+                     alt="TiFi AI Video Tools project showcase"
+                     loading="lazy"
+                     style="height: 250px;" />
               </div>
-              <div class="card-custom-content p-4">
-                <h4><span class="head-color">Tifi: AI Video Tools</span></h4>
-                <p>
+              <div class="card-custom-content p-4 d-flex flex-column flex-grow-1">
+                <h5 class="mb-3"><span class="head-color">TiFi: AI Video Tools</span></h5>
+                <p class="flex-grow-1 text-readable">
                   TiFi simplifies content creation with AI-powered tools for
-                  transcription, summarization, and media generation. 
+                  transcription, summarization, and media generation.
                 </p>
 
-                <div class="d-flex gap-2 justify-content-between align-items-center">
+                <div class="d-flex gap-2 justify-content-between align-items-center mt-auto">
                   <a href="./screens/convey.html" class="link-custom">View Case Study</a>
-                  <a href="https://staging.tifi.tv/" class="button d-flex align-items-center">
+                  <a href="https://tifi.tv/" 
+                     class="btn btn-sm btn-outline-light d-flex align-items-center gap-2"
+                     target="_blank" 
+                     rel="noopener noreferrer">
                     Live Link
-                    <img class="" style="width: 1.5rem" src="../assets/images/arrow-up.svg" alt="" />
+                    <i class="fas fa-external-link-alt"></i>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4" data-aos="fade-up">
-            <div class="card-custom project rounded-4 bg-base shadow-effect">
-              <div class="card-custom-image rounded-4">
-                <img class="rounded-4 project-image" src="./assets/images/hero.png" alt="" />
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-custom project rounded-4 bg-base shadow-effect h-100 d-flex flex-column">
+              <div class="card-custom-image rounded-4 overflow-hidden">
+                <img class="rounded-4 w-100 object-fit-cover" 
+                     src="./assets/images/hero.png" 
+                     alt="Credet fintech loan platform case study"
+                     loading="lazy"
+                     style="height: 250px;" />
               </div>
-              <div class="card-custom-content p-4">
-                <h4><span class="head-color"> Credet UX Case Study</span></h4>
-                <p>
-                  A quick and easy way to obtain a business and other types of
-                  loan with ease of payment and a low rate
+              <div class="card-custom-content p-4 d-flex flex-column flex-grow-1">
+                <h5 class="mb-3"><span class="head-color">Credet</span></h5>
+                <p class="flex-grow-1 text-readable">
+                  A quick and easy way to obtain business and personal loans
+                  with ease of payment and competitive rates.
                 </p>
 
-                <div class="d-flex gap-2 justify-content-between align-items-center">
+                <div class="d-flex gap-2 justify-content-between align-items-center mt-auto">
                   <a href="./screens/credet.html" class="link-custom">View Case Study</a>
                   <a href="https://mercy-kalu.notion.site/Credet-6bb7a270241f4665a12e569c152211bd"
-                    class="button d-flex align-items-center">
+                     class="btn btn-sm btn-outline-light d-flex align-items-center gap-2"
+                     target="_blank" 
+                     rel="noopener noreferrer">
                     Live Link
-                    <img class="" style="width: 1.5rem" src="../assets/images/arrow-up.svg" alt="" />
+                    <i class="fas fa-external-link-alt"></i>
                   </a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-custom project rounded-4 bg-base shadow-effect">
-              <div class="card-custom-image rounded-4">
-                <img class="rounded-4 project-image" src="./assets/images/restaurant.png" alt="" />
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-custom project rounded-4 bg-base shadow-effect h-100 d-flex flex-column">
+              <div class="card-custom-image rounded-4 overflow-hidden">
+                <img class="rounded-4 w-100 object-fit-cover" 
+                     src="./assets/images/restaurant.png" 
+                     alt="Master Chef Restaurant website design"
+                     loading="lazy"
+                     style="height: 250px;" />
               </div>
-              <div class="card-custom-content p-4">
-                <h4><span class="head-color">Restaurant Website</span></h4>
-                <p>
-                  Come and discover the difference at master chef restaurant.
-                  We can't wait to welcome you to our exquisite dinning with all.
-                  <!-- friends and family with classic treatment -->
+              <div class="card-custom-content p-4 d-flex flex-column flex-grow-1">
+                <h5 class="mb-3"><span class="head-color">Restaurant Website</span></h5>
+                <p class="flex-grow-1 text-readable">
+                  Come and discover the difference at Master Chef Restaurant.
+                  We can't wait to welcome you to our exquisite dining experience.
                 </p>
-                <!-- <a href="./screens/caseStudy.html" class="link-custom">View Case Study</a> -->
 
-                <div class="d-flex gap-2 justify-content-between align-items-center">
+                <div class="d-flex gap-2 justify-content-between align-items-center mt-auto">
                   <a href="./screens/restaurant.html" class="link-custom">View Case Study</a>
-                  <a href="https://sim-masterchef.vercel.app/" class="button d-flex align-items-center">
+                  <a href="https://sim-masterchef.vercel.app/" 
+                     class="btn btn-sm btn-outline-light d-flex align-items-center gap-2"
+                     target="_blank" 
+                     rel="noopener noreferrer">
                     Live Link
-                    <img class="" style="width: 1.5rem" src="../assets/images/arrow-up.svg" alt="" />
+                    <i class="fas fa-external-link-alt"></i>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4" data-aos="fade-up">
-            <div class="card-custom project rounded-4 bg-base shadow-effect">
-              <div class="card-custom-image rounded-4">
-                <img class="rounded-4 project-image" src="./assets/images/delve.png" alt="" />
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-custom project rounded-4 bg-base shadow-effect h-100 d-flex flex-column">
+              <div class="card-custom-image rounded-4 overflow-hidden">
+                <img class="rounded-4 w-100 object-fit-cover" 
+                     src="./assets/images/delve.png" 
+                     alt="Delve language learning AI platform"
+                     loading="lazy"
+                     style="height: 250px;" />
               </div>
-              <div class="card-custom-content p-4">
-                <h4>
-                  <span class="head-color">Delve: Language Learning AI</span>
-                </h4>
-                <p>
+              <div class="card-custom-content p-4 d-flex flex-column flex-grow-1">
+                <h5 class="mb-3"><span class="head-color">Delve: Language Learning AI</span></h5>
+                <p class="flex-grow-1 text-readable">
                   Become a Language Master by Delving into a World of
-                  Immersive Experiences where learning is fun and languages
-                  build more skills and learn new languages always.
+                  Immersive Experiences where learning is fun and engaging.
                 </p>
 
-                <div class="d-flex gap-2 justify-content-between align-items-center">
+                <div class="d-flex gap-2 justify-content-between align-items-center mt-auto">
                   <a href="./screens/delve.html" class="link-custom">View Case Study</a>
-                  <a href="https://staging.delve.fun/careers" class="button d-flex align-items-center">
+                  <a href="https://delve.fun/" 
+                     class="btn btn-sm btn-outline-light d-flex align-items-center gap-2"
+                     target="_blank" 
+                     rel="noopener noreferrer">
                     Live Link
-                    <img class="" style="width: 1.5rem" src="../assets/images/arrow-up.svg" alt="" />
+                    <i class="fas fa-external-link-alt"></i>
                   </a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-custom project rounded-4 bg-base shadow-effect">
-              <div class="card-custom-image rounded-4">
-                <img class="rounded-4 project-image" src="./assets/images/boilerplate.png" alt="" />
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="card-custom project rounded-4 bg-base shadow-effect h-100 d-flex flex-column">
+              <div class="card-custom-image rounded-4 overflow-hidden">
+                <img class="rounded-4 w-100 object-fit-cover" 
+                     src="./assets/images/boilerplate.png" 
+                     alt="HNG Boilerplate UI component library"
+                     loading="lazy"
+                     style="height: 250px;" />
               </div>
-              <div class="card-custom-content p-4">
-                <h4><span class="head-color">Boilerplate Project</span></h4>
-                <p>
-                  The HNG Broilerplate is designed to tackle the challenges of
-                  UI component creation and management by providing a robust
-                  framework for generating components.
+              <div class="card-custom-content p-4 d-flex flex-column flex-grow-1">
+                <h5 class="mb-3"><span class="head-color">HNG Boilerplate</span></h5>
+                <p class="flex-grow-1 text-readable">
+                  Simplifying design with ready-to-use UI components and
+                  a robust framework for generating reusable elements.
                 </p>
 
-                <div class="d-flex gap-2 justify-content-between align-items-center">
+                <div class="d-flex gap-2 justify-content-between align-items-center mt-auto">
                   <a href="./screens/boilerplate.html" class="link-custom">View Case Study</a>
-                  <a href="https://anchor-python.teams.hng.tech/" class="button d-flex align-items-center">
+                  <a href="https://anchor-python.teams.hng.tech/" 
+                     class="btn btn-sm btn-outline-light d-flex align-items-center gap-2"
+                     target="_blank" 
+                     rel="noopener noreferrer">
                     Live Link
-                    <img class="" style="width: 1.5rem" src="../assets/images/arrow-up.svg" alt="" />
+                    <i class="fas fa-external-link-alt"></i>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-custom project rounded-4 bg-base shadow-effect">
-              <div class="card-custom-image rounded-4">
-                <img class="rounded-4 project-image img-fluid img-thumbnail" src="./assets/images/nfc.png" alt="" />
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="card-custom project rounded-4 bg-base shadow-effect h-100 d-flex flex-column">
+              <div class="card-custom-image rounded-4 overflow-hidden">
+                <img class="rounded-4 w-100 object-fit-cover" 
+                     src="./assets/images/nfc.png" 
+                     alt="NFC Gym Tracker mobile application"
+                     loading="lazy"
+                     style="height: 250px;" />
               </div>
-              <div class="card-custom-content p-4">
-                <h4><span class="head-color">NFC: Gym Tracker App</span></h4>
-                <p>
-                  A quick and easy way to connect and access your GYM app with
-                  ease tracking, logging in workouts and controlling your excercises and routines
+              <div class="card-custom-content p-4 d-flex flex-column flex-grow-1">
+                <h5 class="mb-3"><span class="head-color">Gym Tracker App</span></h5>
+                <p class="flex-grow-1 text-readable">
+                  A quick and easy way to connect and access gym equipment with
+                  NFC technology for seamless workout tracking.
                 </p>
 
-                <div class="d-flex gap-2 justify-content-between align-items-center">
+                <div class="d-flex gap-2 justify-content-between align-items-center mt-auto">
                   <a href="./screens/gymTracker.html" class="link-custom">View Case Study</a>
                   <a href="https://drive.google.com/file/d/1O8sYHxJEUXiHKreKj-2CuaJDZduKR0gY/view?usp=drive_link"
-                    class="button d-flex align-items-center">
-                 
+                     class="btn btn-sm btn-outline-light d-flex align-items-center gap-2"
+                     target="_blank" 
+                     rel="noopener noreferrer">
                     APK File
-                    <img class="" style="width: 1.5rem" src="../assets/images/arrow-up.svg" alt="" />
+                    <i class="fas fa-download"></i>
                   </a>
                 </div>
               </div>
@@ -320,12 +398,12 @@
     </section>
 
     <!-- TOOLS -->
-    <section id="tools" class="full-height px-lg-5">
+    <section id="tools" class="section-spacing px-lg-5">
       <div class="container">
         <div class="row pb-4" data-aos="fade-up">
           <div class="col-lg-8">
             <h6 class="text-brand">TOOLS</h6>
-            <h1>Tools that i Work With</h1>
+            <h2 class="display-5 fw-bold">Tools That I Work With</h2>
           </div>
         </div>
 
@@ -416,12 +494,12 @@
 
     <!-- TOOLS -->
     <!-- EDUCATION -->
-    <section id="education" class="full-height px-lg-5">
+    <section id="education" class="section-spacing px-lg-5">
       <div class="container">
         <div class="row pb-4" data-aos="fade-up">
           <div class="col-lg-8">
             <h6 class="text-brand">EDUCATION</h6>
-            <h1>My Learning Certifications</h1>
+            <h2 class="display-5 fw-bold">My Learning Certifications</h2>
           </div>
         </div>
 
@@ -474,12 +552,12 @@
     </section>
 
     <!-- REVIEWS -->
-    <section id="reviews" class="full-height px-lg-5">
+    <section id="reviews" class="section-spacing px-lg-5">
       <div class="container">
         <div class="row pb-4" data-aos="fade-up">
           <div class="col-lg-8">
             <h6 class="text-brand">REVIEWS</h6>
-            <h1>What My Colleagues say</h1>
+            <h2 class="display-5 fw-bold">What My Colleagues Say</h2>
           </div>
         </div>
 
@@ -554,12 +632,13 @@
     </section>
     <!-- //REVIEWS -->
     <!-- CONTACT -->
-    <section id="contact" class="full-height px-lg-5">
+    <section id="contact" class="section-spacing px-lg-5">
       <div class="container">
-        <div class="row justify-content-center text-left">
+        <div class="row justify-content-center text-center">
           <div class="col-lg-8 pb-4" data-aos="fade-up">
             <h6 class="text-brand">CONTACT ME</h6>
-            <h1>Reach out Lets work Together🖐</h1>
+            <h2 class="display-5 fw-bold">Let's Work Together 🖐</h2>
+            <p class="lead text-readable">Ready to bring your ideas to life? Let's discuss your next project.</p>
           </div>
 
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
@@ -589,19 +668,42 @@
     <!-- //CONTACT -->
 
     <!-- FOOTER -->
-    <footer class="py-5 px-lg-5">
+    <footer class="py-5 px-lg-5" role="contentinfo">
       <div class="container">
-        <div class="row gy-4 justify-content-between">
+        <div class="row gy-4 justify-content-between align-items-center">
           <div class="col-auto">
-            <p>&copy; 2025 Designed and Developed by Mercy Kalu</p>
+            <p class="mb-0">&copy; 2025 Designed and Developed by Mercy Kalu</p>
           </div>
           <div class="col-auto">
-            <div class="social-icons">
-              <a href="https://www.twitter.com/iambelrah">
-                <i class="fa fa-brands fa-twitter work-icon"></i></a>
-              <a href="https://www.linkedin.com/in/mercy-kalu"><i class="fa fa-brands fa-linkedin-in work-icon"></i></a>
-              <a href="https://www.behance.net/MercyKalu"><i class="fa fa-brands fa-square-behance work-icon"></i></a>
-              <a href="https://www.github.com/belrah"><i class="fa fa-brands fa-github work-icon"></i></a>
+            <div class="social-icons d-flex gap-3">
+              <a href="https://www.twitter.com/iambelrah" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 aria-label="Follow Mercy Kalu on Twitter"
+                 class="social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/mercy-kalu" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 aria-label="Connect with Mercy Kalu on LinkedIn"
+                 class="social-link">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://www.behance.net/MercyKalu" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 aria-label="View Mercy Kalu's work on Behance"
+                 class="social-link">
+                <i class="fab fa-behance"></i>
+              </a>
+              <a href="https://www.github.com/belrah" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 aria-label="Check out Mercy Kalu's code on GitHub"
+                 class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -611,9 +713,12 @@
   </div>
   <!-- //CONTENT WRAPPER -->
 
-  <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  <script src="./assets/js/aos.js"></script>
-  <script src="./assets/js/main.js"></script>
+  <!-- Optimized JavaScript Loading -->
+  <script src="./assets/js/bootstrap.bundle.min.js" defer></script>
+  <script src="./assets/js/aos.js" defer></script>
+  <script src="./assets/js/main.js" defer></script>
+  <script src="./assets/js/performance.js" defer></script>
+  <script src="./assets/js/home-optimizations.js" defer></script>
 </body>
 
 </html>

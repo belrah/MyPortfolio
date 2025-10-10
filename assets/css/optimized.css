@@ -1,0 +1,275 @@
+/* Performance Optimizations */
+.project-info-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Images */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Loading States */
+.loading-placeholder {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* Improved Typography */
+.text-readable {
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* Better Spacing */
+.section-spacing {
+    padding: 4rem 0;
+}
+
+.content-spacing {
+    margin-bottom: 2rem;
+}
+
+/* Enhanced Buttons */
+.btn-enhanced {
+    transition: all 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.btn-enhanced:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+    .section-spacing {
+        padding: 2rem 0;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
+    
+    .project-info-card {
+        padding: 1rem;
+    }
+}
+
+/* Accessibility Improvements */
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* Focus States */
+.btn:focus,
+a:focus {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 2px;
+}
+
+/* Performance: Reduce paint and layout thrashing */
+.will-change-transform {
+    will-change: transform;
+}
+
+.will-change-opacity {
+    will-change: opacity;
+}
+
+/* Critical CSS for above-the-fold content */
+.hero-section {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Lazy loading improvements */
+img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+img[loading="lazy"].loaded {
+    opacity: 1;
+}
+
+/* Home page specific optimizations */
+.hero-section {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.95) 0%, rgba(21, 21, 21, 0.98) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/hero-pattern.svg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.05;
+    z-index: -1;
+}
+
+/* Card improvements for home page */
+.card-custom.project {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.card-custom.project:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-color: var(--color-brand);
+}
+
+.card-custom-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-custom-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 0%, rgba(184, 172, 241, 0.1) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card-custom.project:hover .card-custom-image::after {
+    opacity: 1;
+}
+
+/* Button enhancements */
+.btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--color-brand);
+    color: var(--color-brand);
+    transform: translateY(-2px);
+}
+
+/* Social links styling */
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--color-body);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    background: var(--color-brand);
+    color: var(--color-heading);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(184, 172, 241, 0.4);
+}
+
+/* Improved section spacing */
+.section-spacing {
+    padding: 5rem 0;
+}
+
+@media (max-width: 768px) {
+    .section-spacing {
+        padding: 3rem 0;
+    }
+    
+    .hero-section {
+        padding: 2rem 0;
+    }
+    
+    .display-3 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Performance: GPU acceleration for animations */
+.card-custom.project,
+.btn-enhanced,
+.social-link {
+    will-change: transform;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus improvements for accessibility */
+.nav-link:focus,
+.btn:focus,
+.social-link:focus {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(184, 172, 241, 0.2);
+}
+
+/* Loading state for images */
+.card-custom-image img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.card-custom-image img[loading="lazy"]:not(.loaded) {
+    opacity: 0.7;
+    filter: blur(2px);
+}
+
+.card-custom-image img.loaded {
+    opacity: 1;
+    filter: none;
+}

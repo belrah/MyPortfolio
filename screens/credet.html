@@ -4,35 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Credet Case Study - A quick and easy way to obtain business and personal loans. Fintech platform design by Mercy Kalu." />
+    <meta name="keywords" content="Credet, Fintech, Loan App, UX Design, Business Loans, Mercy Kalu" />
+    <meta name="author" content="Mercy Kalu" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Credet Case Study - Mercy Kalu" />
+    <meta property="og:description" content="A quick and easy way to obtain business and personal loans" />
+    <meta property="og:image" content="../assets/images/hero.png" />
+    <meta property="og:type" content="website" />
 
-    <title>Mercy Kalu - Case Study</title>
+    <title>Credet Fintech Case Study - Mercy Kalu | Product Designer</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="../assets/css/bootstrap.min.css" as="style" />
+    <link rel="preload" href="../assets/css/style.css" as="style" />
+    <link rel="preload" href="../assets/images/hero.png" as="image" />
+    
+    <!-- CSS Files -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../assets/css/aos.css" />
     <link rel="stylesheet" href="../assets/css/line-awesome.min.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/study.css" />
+    <link rel="stylesheet" href="../assets/css/optimized.css" />
 
+    <!-- Font optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
+        rel="stylesheet"
+        media="print" 
+        onload="this.media='all'" />
 
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"
+        media="print" 
+        onload="this.media='all'">
 
-    <script src="https://kit.fontawesome.com/168fb1c8fd.js" crossorigin="anonymous"></script>
+    <!-- Defer non-critical JavaScript -->
+    <script src="https://kit.fontawesome.com/168fb1c8fd.js" crossorigin="anonymous" defer></script>
 
 </head>
 
 <body>
-    <header class="container d-flex justify-content-between align-items-center">
-        <a href="/index.html" title="Go to Home Page">
-            <img class="arrow" loading="lazy" alt="" src="../assets/images/arrow-left.svg" />
+    <header class="container d-flex justify-content-between align-items-center py-3" role="banner">
+        <a href="../index.html" aria-label="Go back to home page">
+            <img class="arrow" loading="lazy" alt="Back arrow" src="../assets/images/arrow-left.svg" width="48" height="48" />
         </a>
 
-        <h3 class="fw-bold study">Case Study</h3>
+        <h1 class="fw-bold study h3 mb-0">Case Study</h1>
 
-        <a href="./projects.html" target="_blank" rel="noopener noreferrer" class="btn btn-brand me-3">All Projects</a>
+        <a href="./projects.html" target="_blank" rel="noopener noreferrer" class="btn btn-brand me-3" aria-label="View all projects">All Projects</a>
     </header>
 
     <section class="container text-center">
@@ -377,9 +402,11 @@
         </div>
     </footer>
 
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/aos.js"></script>
-    <script src="../assets/js/main.js"></script>
+    <!-- Optimized JavaScript Loading -->
+    <script src="../assets/js/bootstrap.bundle.min.js" defer></script>
+    <script src="../assets/js/aos.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
+    <script src="../assets/js/performance.js" defer></script>
 </body>
 
 </html>

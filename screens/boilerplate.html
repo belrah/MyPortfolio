@@ -4,119 +4,192 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Mercy Kalu - Boilerplate</title>
+    <meta name="description" content="HNG Boilerplate - Simplifying Design with Ready-to-Use UI Components. Case study by Mercy Kalu, Product Designer." />
+    <meta name="keywords" content="HNG Boilerplate, UI Components, Design System, Mercy Kalu, Product Design, UX Design" />
+    <meta name="author" content="Mercy Kalu" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="HNG Boilerplate Case Study - Mercy Kalu" />
+    <meta property="og:description" content="Simplifying Design with Ready-to-Use UI Components" />
+    <meta property="og:image" content="../assets/images/boilerplate1.png" />
+    <meta property="og:type" content="website" />
+    
+    <title>HNG Boilerplate Case Study - Mercy Kalu | Product Designer</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="../assets/css/bootstrap.min.css" as="style" />
+    <link rel="preload" href="../assets/css/style.css" as="style" />
+    <link rel="preload" href="../assets/images/boilerplate1.png" as="image" />
+    
+    <!-- CSS Files -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../assets/css/aos.css" />
     <link rel="stylesheet" href="../assets/css/line-awesome.min.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/gym.css" />
+    <link rel="stylesheet" href="../assets/css/optimized.css" />
 
+    <!-- Font optimization -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
+        rel="stylesheet" 
+        media="print" 
+        onload="this.media='all'" />
 
-    <script src="https://kit.fontawesome.com/168fb1c8fd.js" crossorigin="anonymous"></script>
+    <!-- Defer non-critical JavaScript -->
+    <script src="https://kit.fontawesome.com/168fb1c8fd.js" crossorigin="anonymous" defer></script>
 </head>
 
 <body>
-    <header class="container d-flex justify-content-between align-items-center">
-        <a href="/index.html">
-            <img class="arrow" loading="lazy" alt="" src="../assets/images/arrow-left.svg" />
+    <header class="container d-flex justify-content-between align-items-center py-3" role="banner">
+        <a href="../index.html" aria-label="Go back to home page">
+            <img class="arrow" loading="lazy" alt="Back arrow" src="../assets/images/arrow-left.svg" width="48" height="48" />
         </a>
 
-        <h3 class="fw-bold study">Case Study</h3>
+        <h1 class="fw-bold study h3 mb-0">Case Study</h1>
 
-        <a href="./projects.html" target="_blank" rel="noopener noreferrer" class="btn btn-brand me-3">All Projects</a>
+        <a href="./projects.html" target="_blank" rel="noopener noreferrer" class="btn btn-brand me-3" aria-label="View all projects">All Projects</a>
     </header>
 
-    <section class="container text-center">
-        <h1 class="display-4 fw-bold text-white">HNG BOILERPLATE</h1>
-        <p class="lead">
+    <section class="container text-center" role="main">
+        <h2 class="display-4 fw-bold text-white mb-4">HNG BOILERPLATE</h2>
+        <p class="lead mb-4">
             Simplifying Design with Ready-to-Use <br />
             UI Components
         </p>
 
-        <div class="d-flex justify-content-center align-items-center gap-2 my-2 my-md-5" data-aos="fade-up">
-            <a href="https://anchor-python.teams.hng.tech/" class="btn btn-primary">View Live Link</a>
+        <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3 my-4" data-aos="fade-up">
+            <a href="https://anchor-python.teams.hng.tech/" 
+               class="btn btn-primary" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               aria-label="View live HNG Boilerplate website">
+               View Live Link
+            </a>
             <a href="https://www.figma.com/design/VEItfX6St5NSAqqNHImcxD/HNG-Boilerplate-Designs?node-id=2084-18389&node-type=CANVAS&t=Az8lR6XNqrg6NtKz-0"
-                class="btn btn-dark border-0">View Design File</a>
+               class="btn btn-dark border-0"
+               target="_blank" 
+               rel="noopener noreferrer"
+               aria-label="View Figma design file">
+               View Design File
+            </a>
         </div>
 
-        <img class="image-27-icon mb-lg-5 mb-sm-3" loading="lazy" alt="" src="../assets/images/boilerplate1.png" data-aos="fade-up"
-            data-aos-delay="300" />
+        <picture>
+            <source media="(max-width: 768px)" srcset="../assets/images/boilerplate1-mobile.png" />
+            <img class="img-fluid mb-5" 
+                 loading="lazy" 
+                 alt="HNG Boilerplate project showcase displaying the main interface and components" 
+                 src="../assets/images/boilerplate1.png" 
+                 data-aos="fade-up"
+                 data-aos-delay="300"
+                 width="1200"
+                 height="800" />
+        </picture>
     </section>
 
     
 
-    <section id="project-description">
+    <section id="project-description" class="py-5" aria-labelledby="project-overview">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <h4>My Role</h4>
-                    <p>Ass. Design Lead</p>
-                    <p>UI Designer</p>
-                    <p>UX Designer</p>
-                    <p>Design System</p>    
+            <h2 id="project-overview" class="visually-hidden">Project Overview</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="project-info-card h-100">
+                        <h3 class="h5 text-brand mb-3">My Role</h3>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">Assistant Design Lead</li>
+                            <li class="mb-2">UI Designer</li>
+                            <li class="mb-2">UX Designer</li>
+                            <li class="mb-2">Design System Architect</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <h4>Design Deliverables</h4>
-                    <p>Design Style Guild</p>
-                    <p>Component Liberaries</p>
-                    <p>User Experience Process</p>
-                    <p>High Fidelity Design</p>   
+                <div class="col-lg-3 col-md-6">
+                    <div class="project-info-card h-100">
+                        <h3 class="h5 text-brand mb-3">Design Deliverables</h3>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">Design Style Guide</li>
+                            <li class="mb-2">Component Libraries</li>
+                            <li class="mb-2">User Experience Process</li>
+                            <li class="mb-2">High Fidelity Design</li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <h4>Platform Deliverable</h4>
-                    <p>Web and Mobile</p>
-                    <h4>Timeline</h4>
-                    <p>August 2024 - Now</p>
-                    <h4>Designers</h4>
-                    <p>15 Anchor Team Designers</p>          
+                <div class="col-lg-3 col-md-6">
+                    <div class="project-info-card h-100">
+                        <h3 class="h5 text-brand mb-3">Platform</h3>
+                        <p class="mb-3">Web and Mobile</p>
+                        <h3 class="h5 text-brand mb-3">Timeline</h3>
+                        <p class="mb-3">August 2024 - Present</p>
+                        <h3 class="h5 text-brand mb-3">Team Size</h3>
+                        <p class="mb-0">15 Anchor Team Designers</p>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <h4>Other Team</h4>
-                    <p>Product Managers</p>
-                    <p>Digital Marketers</p>
-                    <p>Data Analysts</p> 
-                    <p>Software Developers (Web and Mobile)</p>
+                <div class="col-lg-3 col-md-6">
+                    <div class="project-info-card h-100">
+                        <h3 class="h5 text-brand mb-3">Collaborators</h3>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">Product Managers</li>
+                            <li class="mb-2">Digital Marketers</li>
+                            <li class="mb-2">Data Analysts</li>
+                            <li class="mb-2">Software Developers</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="container role-ctn">
-        <div class="container">
-            <h1 class="display-4 fw-bold text-white">My Role & Contribution</h1>
-            <p>
-                I was responsible for designing screens which includes: Home Page,
-                About Us, Pricing, Blogs, login/sign up flow and password retrieval
-                flow. I gave and received supports from my team mate which helped in
-                overall success of the project completion
-            </p>
-            <h3>Project Collaborators</h3>
-            <p>HNG Design Interns</p>
+    <section class="container section-spacing" aria-labelledby="role-contribution">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+                <h2 id="role-contribution" class="display-5 fw-bold text-white mb-4">My Role & Contribution</h2>
+                <p class="text-readable content-spacing">
+                    I was responsible for designing key screens including the Home Page,
+                    About Us, Pricing, Blogs, and complete authentication flows (login/sign up 
+                    and password retrieval). Through collaborative teamwork and mutual support, 
+                    we achieved the overall success of the project.
+                </p>
+                <div class="mt-4">
+                    <h3 class="h5 text-brand mb-3">Project Collaborators</h3>
+                    <p class="mb-0">HNG Design Interns Team</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid responsive-img" 
+                     loading="lazy" 
+                     alt="Visual representation of my contribution to the HNG Boilerplate project showing designed screens and components" 
+                     src="../assets/images/boiler-contribution.png" 
+                     data-aos="fade-up"
+                     data-aos-delay="300"
+                     width="600"
+                     height="400" />
+            </div>
         </div>
-        <img class="role-img" loading="lazy" alt="" src="../assets/images/boiler-contribution.png" data-aos="fade-up"
-            data-aos-delay="300" />
     </section>
 
     
-    <section class="container mb-4">
-        <h1 class="display-4 fw-bold text-white">Introduction</h1>
-        <p>
-            In the ever-evolving field of UI/UX design and development, creating
-            consistent and high-quality user interfaces is crucial. Traditional
-            methods of building UI components from scratch for each project can be
-            both time-consuming and prone to inconsistencies. Recognizing these
-            challenges, the HNG Broilerplate project was conceived to revolutionize
-            the way reusable UI components are designed and managed. HNG
-            Broilerplate is a comprehensive solution aimed at streamlining the
-            creation of bespoke component libraries, providing designers and
-            developers with a powerful toolkit to enhance their workflow.
-        </p>
+    <section class="container section-spacing" aria-labelledby="introduction">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h2 id="introduction" class="display-5 fw-bold text-white mb-4">Introduction</h2>
+                <p class="text-readable">
+                    In the ever-evolving field of UI/UX design and development, creating
+                    consistent and high-quality user interfaces is crucial. Traditional
+                    methods of building UI components from scratch for each project can be
+                    both time-consuming and prone to inconsistencies. 
+                </p>
+                <p class="text-readable">
+                    Recognizing these challenges, the HNG Boilerplate project was conceived to revolutionize
+                    the way reusable UI components are designed and managed. HNG
+                    Boilerplate is a comprehensive solution aimed at streamlining the
+                    creation of bespoke component libraries, providing designers and
+                    developers with a powerful toolkit to enhance their workflow.
+                </p>
+            </div>
+        </div>
     </section>
 
     <section class="container pro-ctn">
@@ -343,9 +416,11 @@
         <img class="img" loading="lazy" alt="" src="../assets/images/thank-you.svg" data-aos="fade-up" />
     </div>
 
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/aos.js"></script>
-    <script src="../assets/js/main.js"></script>
+    <!-- Optimized JavaScript Loading -->
+    <script src="../assets/js/bootstrap.bundle.min.js" defer></script>
+    <script src="../assets/js/aos.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
+    <script src="../assets/js/performance.js" defer></script>
 </body>
 
 </html>

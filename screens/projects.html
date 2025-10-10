@@ -3,191 +3,307 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="All Projects by Mercy Kalu - Product Designer. Explore case studies including HNG Boilerplate, TiFi AI Tools, Credet Fintech, and more." />
+    <meta name="keywords" content="Mercy Kalu, Product Designer, UX Design, UI Design, Portfolio, Projects, Case Studies" />
+    <meta name="author" content="Mercy Kalu" />
     
-    <title>Mercy Kalu - All Projects</title>
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="All Projects - Mercy Kalu | Product Designer" />
+    <meta property="og:description" content="Explore comprehensive case studies and design projects" />
+    <meta property="og:image" content="../assets/images/portfolio-preview.png" />
+    <meta property="og:type" content="website" />
+    
+    <title>All Projects - Mercy Kalu | Product Designer Portfolio</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="../assets/css/bootstrap.min.css" as="style" />
+    <link rel="preload" href="../assets/css/style.css" as="style" />
+    <link rel="preload" href="../assets/images/arrow-left.svg" as="image" />
+    
+    <!-- Critical CSS inline for faster loading -->
+    <style>
+        /* Critical above-the-fold styles */
+        body { 
+            background-color: #151515; 
+            color: #BEBEBE; 
+            font-family: 'Lato', sans-serif; 
+            margin: 0;
+            padding: 0;
+        }
+        .container { 
+            max-width: 1140px; 
+            margin: 0 auto; 
+            padding: 0 15px; 
+        }
+        .d-flex { display: flex; }
+        .justify-content-between { justify-content: space-between; }
+        .align-items-center { align-items: center; }
+        .py-3 { padding-top: 1rem; padding-bottom: 1rem; }
+        .arrow { 
+            width: 48px; 
+            height: 48px; 
+            transition: transform 0.2s ease;
+        }
+        .arrow:hover { transform: scale(1.1); }
+        .btn-brand { 
+            background-color: #6148E0; 
+            color: white; 
+            padding: 0.5rem 1rem; 
+            border-radius: 2rem; 
+            text-decoration: none; 
+            transition: all 0.3s ease;
+            border: none;
+        }
+        .btn-brand:hover {
+            background-color: #4a37b8;
+            transform: translateY(-2px);
+        }
+        .text-white { color: white !important; }
+        .fw-bold { font-weight: 600; }
+        .h3 { font-size: 1.75rem; }
+        .mb-0 { margin-bottom: 0; }
+        
+        /* Performance optimizations */
+        img { 
+            opacity: 0; 
+            transition: opacity 0.3s ease; 
+        }
+        img.loaded, img[loading="eager"] { 
+            opacity: 1; 
+        }
+        
+        /* Card hover effects */
+        .card-custom { 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
+        .card-custom:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3); 
+        }
+        
+        /* Search container styles */
+        .search-container {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        
+        .form-control {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        
+        .form-control:focus {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: #B8ACF1;
+            box-shadow: 0 0 0 0.2rem rgba(184, 172, 241, 0.25);
+            color: white;
+        }
+        
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+    </style>
+    
+    <!-- CSS Files - Load non-critical CSS asynchronously -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../assets/css/aos.css" />
-    <link rel="stylesheet" href="../assets/css/line-awesome.min.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="stylesheet" href="../assets/css/study.css" />
+    <link rel="stylesheet" href="../assets/css/study.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="../assets/css/optimized.css" media="print" onload="this.media='all'" />
+    
+    <!-- Load AOS CSS only when needed -->
+    <link rel="stylesheet" href="../assets/css/aos.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="../assets/css/line-awesome.min.css" media="print" onload="this.media='all'" />
 
+    <!-- Font optimization -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
+      media="print" 
+      onload="this.media='all'"
     />
 
+    <!-- Defer non-critical JavaScript -->
     <script
       src="https://kit.fontawesome.com/168fb1c8fd.js"
       crossorigin="anonymous"
+      defer
     ></script>
 </head>
 <body>
-    <header class="container d-flex justify-content-between align-items-center">
-        <a href="/">
+    <header class="container d-flex justify-content-between align-items-center py-3" role="banner">
+        <a href="../index.html" aria-label="Go back to home page">
             <img
             class="arrow"
             loading="lazy"
-            alt=""
+            alt="Back arrow"
             src="../assets/images/arrow-left.svg"
+            width="48"
+            height="48"
             />
         </a>
 
-        <a href="https://docs.google.com/document/d/1gupESLJxXC8l6K04ucLdlPutRCCYZD1_BZSrEcFujtA/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-brand me-3">Resume</a>
-       
+        <h1 class="fw-bold study h3 mb-0">All Projects</h1>
 
-        <!-- <a href="#" class="btn btn-white">View other Projects</a> -->
+        <a href="https://docs.google.com/document/d/1gupESLJxXC8l6K04ucLdlPutRCCYZD1_BZSrEcFujtA/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-brand me-3">Resume</a>
     </header>
+
+    <!-- Search Section -->
+    <section class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <div class="search-container bg-base rounded-4 p-4 shadow-effect">
+                    <h3 class="text-center mb-4 text-white">Find Your Project</h3>
+                    <div class="position-relative">
+                        <input 
+                            type="text" 
+                            id="projectSearch" 
+                            class="form-control form-control-lg rounded-pill ps-5" 
+                            placeholder="Search projects by name or description..."
+                            aria-label="Search projects"
+                        />
+                        <i class="fas fa-search position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
+                    </div>
+                    <div class="mt-3 text-center">
+                        <small class="text-muted">Try searching for "AI", "Restaurant", "Gym", "Fintech", or any keyword</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Projects -->
     <section id="project" class="my-3 px-lg-5">
         <div class="container">
-          <div class="row pb-4" data-aos="fade-up">
+          <div class="row pb-4 align-items-center justify-content-between">
             <div class="col-lg-8">
               <h6 class="text-brand">Projects</h6>
-             
-              <div data-aos="fade-up" data-aos-delay="600" id="project-btn">
-                <h1 class="">All New Projects</h1>
-              </div>
+              <h2 class="display-5 fw-bold mb-0">All New Projects</h2>
+            </div>
+            <div class="col-lg-4 text-end">
+                <div id="searchResults" class="text-muted small"></div>
             </div>
           </div>
 
           <div class="row gy-4 mb-4">
-
-
-            <div class="col-md-4" data-aos="fade-up">
+            <div class="col-md-4">
                 <div class="card-custom project rounded-4 bg-base shadow-effect">
-                  <div class="card-custom-image rounded-4">
-                    <img
-                      class="rounded-4 object-fit-cover game-cover  img-fluid"
-                      src="../assets/images/boilerplate.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="card-custom-content p-4">
-                    <h4 class="mb-3 pro-header">HNG Boilerplate Template</h4>
-                    <p class="cardbody mb-4">
-                        Get your web application up and running with our Python based boilerplate template. 
-                    </p>
-  
-                    <div class="d-flex gap-2 justify-content-between align-items-center">
-                        <a href="./boilerplate.html" class="link-custom">View Case Study</a>
-                        <a href="https://anchor-python.teams.hng.tech/" class=" d-flex align-items-center buttons">
-                          Live Link
-                          <img
-                              class=""
-                              style="width: 1.5rem;"
-                              src="../assets/images/arrow-up.svg"
-                              alt=""
-                          />
-                      </a>
-                    </div>
-                    
-  
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-md-4" data-aos="fade-up">
-                <div class="card-custom project rounded-4 bg-base shadow-effect">
-                  <div class="card-custom-image rounded-4">
-                    <img
-                      class="rounded-4 object-fit-cover game-cover"
-                      src="../assets/images/tifi.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="card-custom-content p-4">
-                    <h4 class="mb-3 pro-header">TIFI: 7 in 1 AI Video Tools</h4>
-                    <p class="cardbody mb-4">
-                        Join a vibrant community of wellness enthusiasts and experts.
-                    </p>
-  
-                    <div class="d-flex gap-2 justify-content-between align-items-center">
-                        <a href="./convey.html" class="link-custom">View Case Study</a>
-                        <a href="https://tifi.tv/" class="d-flex align-items-center buttons">
-                          Live Link
-                          <img
-                              class=""
-                              style="width: 1.5rem;"
-                              src="../assets/images/arrow-up.svg"
-                              alt=""
-                          />
-                      </a>
-                    </div>
-                    
-  
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-custom project rounded-4 bg-base shadow-effect">
-                <div class="card-custom-image rounded-4">
-                <img
-                    class="rounded-4 object-fit-cover game-cover"
-                    src="../assets/images/hero.png"
-                    alt=""
-                />
-                </div>
-                <div class="card-custom-content p-4">
-                <h4 class="mb-3 pro-header">Credet UX Case Study</h4>
-                <p class="cardbody mb-4">
-                    A quick and easy way to obtain a business and other types of loan 
-                </p>
-
-                <div class="d-flex gap-2 justify-content-between align-items-center">
-                    <a href="./credet.html" class="link-custom">View Case Study</a>
-                  
-                        <a href="https://mercy-kalu.notion.site/Credet-6bb7a270241f4665a12e569c152211bd" class=" d-flex align-items-center buttons">
-                        Live Link
+                    <div class="card-custom-image rounded-4">
                         <img
-                            class=""
-                            style="width: 1.5rem;"
-                            src="../assets/images/arrow-up.svg"
-                            alt=""
+                            class="rounded-4 object-fit-cover game-cover img-fluid"
+                            src="../assets/images/boilerplate.png"
+                            alt="HNG Boilerplate Template project showcase"
+                            loading="lazy"
+                            width="400"
+                            height="250"
                         />
-                    </a>
-                </div>
-                
-
-                </div>
-            </div>
-            </div>
-
-
-
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
-                <div class="card-custom project rounded-4 bg-base shadow-effect">
-                <div class="card-custom-image rounded-4">
-                    <img
-                    class="rounded-4 object-fit-cover game-cover"
-                    src="../assets/images/nfc.png"
-                    alt=""
-                    />
-                </div>
-                <div class="card-custom-content p-4">
-                    <h4 class="mb-3 pro-header">NFC: Gym Tracker</h4>
-                    <p class="cardbody mb-4">
-                        A quick and easy way to connect and access GYM equipments and log workouts.
-                    </p>
-
-                    <div class="d-flex gap-2 justify-content-between align-items-center">
-                        <a href="./gymTracker.html" class="link-custom">View Case Study</a>
-                        <a href="https://drive.google.com/file/d/1O8sYHxJEUXiHKreKj-2CuaJDZduKR0gY/view?usp=drive_link" class=" d-flex align-items-center buttons">
-                        Get APK
-                        <img
-                            class=""
-                            style="width: 1.5rem;"
-                            src="../assets/images/arrow-up.svg"
-                            alt=""
-                        />
-                    </a>
                     </div>
-                    
+                    <div class="card-custom-content p-4">
+                        <h4 class="mb-3 pro-header">HNG Boilerplate Template</h4>
+                        <p class="cardbody mb-4">
+                            Get your web application up and running with our Python based boilerplate template.
+                        </p>
 
+                        <div class="d-flex gap-2 justify-content-between align-items-center">
+                            <a href="./boilerplate.html" class="link-custom">View Case Study</a>
+                            <a href="https://anchor-python.teams.hng.tech/" class="d-flex align-items-center buttons" target="_blank" rel="noopener noreferrer">
+                                Live Link
+                                <i class="fas fa-external-link-alt ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-custom project rounded-4 bg-base shadow-effect">
+                    <div class="card-custom-image rounded-4">
+                        <img
+                            class="rounded-4 object-fit-cover game-cover img-fluid"
+                            src="../assets/images/tifi.png"
+                            alt="TiFi AI Video Tools project showcase"
+                            loading="lazy"
+                            width="400"
+                            height="250"
+                        />
+                    </div>
+                    <div class="card-custom-content p-4">
+                        <h4 class="mb-3 pro-header">TIFI: 7 in 1 AI Video Tools</h4>
+                        <p class="cardbody mb-4">
+                            Empowering content creators with AI-powered tools for transcription, summarization, and media generation.
+                        </p>
+
+                        <div class="d-flex gap-2 justify-content-between align-items-center">
+                            <a href="./convey.html" class="link-custom">View Case Study</a>
+                            <a href="https://tifi.tv/" class="d-flex align-items-center buttons" target="_blank" rel="noopener noreferrer">
+                                Live Link
+                                <i class="fas fa-external-link-alt ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-custom project rounded-4 bg-base shadow-effect">
+                    <div class="card-custom-image rounded-4">
+                        <img
+                            class="rounded-4 object-fit-cover game-cover img-fluid"
+                            src="../assets/images/hero.png"
+                            alt="Credet fintech loan platform case study"
+                            loading="lazy"
+                            width="400"
+                            height="250"
+                        />
+                    </div>
+                    <div class="card-custom-content p-4">
+                        <h4 class="mb-3 pro-header">Credet UX Case Study</h4>
+                        <p class="cardbody mb-4">
+                            A quick and easy way to obtain business and personal loans with competitive rates.
+                        </p>
+
+                        <div class="d-flex gap-2 justify-content-between align-items-center">
+                            <a href="./credet.html" class="link-custom">View Case Study</a>
+                            <a href="https://mercy-kalu.notion.site/Credet-6bb7a270241f4665a12e569c152211bd" class="d-flex align-items-center buttons" target="_blank" rel="noopener noreferrer">
+                                Live Link
+                                <i class="fas fa-external-link-alt ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-4">
+                <div class="card-custom project rounded-4 bg-base shadow-effect">
+                    <div class="card-custom-image rounded-4">
+                        <img
+                            class="rounded-4 object-fit-cover game-cover img-fluid"
+                            src="../assets/images/nfc.png"
+                            alt="NFC Gym Tracker mobile application"
+                            loading="lazy"
+                            width="400"
+                            height="250"
+                        />
+                    </div>
+                    <div class="card-custom-content p-4">
+                        <h4 class="mb-3 pro-header">NFC: Gym Tracker</h4>
+                        <p class="cardbody mb-4">
+                            A quick and easy way to connect and access GYM equipment with NFC technology for seamless workout tracking.
+                        </p>
+
+                        <div class="d-flex gap-2 justify-content-between align-items-center">
+                            <a href="./gymTracker.html" class="link-custom">View Case Study</a>
+                            <a href="https://drive.google.com/file/d/1O8sYHxJEUXiHKreKj-2CuaJDZduKR0gY/view?usp=drive_link" class="d-flex align-items-center buttons" target="_blank" rel="noopener noreferrer">
+                                Get APK
+                                <i class="fas fa-download ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -217,233 +333,207 @@
               </div>
             </div> -->
 
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+            <div class="col-md-4">
                 <div class="card-custom project rounded-4 bg-base shadow-effect">
                 <div class="card-custom-image rounded-4">
                     <img
-                    class="rounded-4 object-fit-cover game-cover"
+                    class="rounded-4 object-fit-cover game-cover img-fluid"
                     src="../assets/images/delve.png"
-                    alt=""
+                    alt="Delve language learning AI platform"
+                    loading="lazy"
+                    width="400"
+                    height="250"
                     />
                 </div>
                 <div class="card-custom-content p-4">
                     <h4 class="mb-3 pro-header">Delve: Language Learning AI</h4>
                     <p class="cardbody mb-4">
-                        Become a Language Master by Delving into a World of Immersive Experiences 
+                        Become a Language Master by Delving into a World of Immersive Experiences with AI-powered learning.
                     </p>
 
                     <div class="d-flex gap-2 justify-content-between align-items-center">
-                        <a href="/" class="link-custom">View Case Study</a>
-                        <a href="https://delve.fun/" class=" d-flex align-items-center buttons">
+                        <a href="./delve.html" class="link-custom">View Case Study</a>
+                        <a href="https://delve.fun/" class="d-flex align-items-center buttons" target="_blank" rel="noopener noreferrer">
                         Live Link
-                        <img
-                            class=""
-                            style="width: 1.5rem;"
-                            src="../assets/images/arrow-up.svg"
-                            alt=""
-                        />
+                        <i class="fas fa-external-link-alt ms-2"></i>
                     </a>
                     </div>
-                    
-
                 </div>
                 </div>
             </div>
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            
+            <div class="col-md-4">
                 <div class="card-custom project rounded-4 bg-base shadow-effect">
                     <div class="card-custom-image rounded-4">
                     <img
-                        class="rounded-4 object-fit-cover game-cover"
+                        class="rounded-4 object-fit-cover game-cover img-fluid"
                         src="../assets/images/letterpals.png"
-                        alt=""
+                        alt="Letter App digital letter writing platform"
+                        loading="lazy"
+                        width="400"
+                        height="250"
                     />
                     </div>
                     <div class="card-custom-content p-4">
                     <h4 class="mb-3 pro-header">Letter App</h4>
                     <p class="cardbody mb-4">
-                        Write, share, and discover letters that stand the test of time to lasting memories.
+                        Write, share, and discover letters that stand the test of time to create lasting memories.
                     </p>
     
                     <div class="d-flex gap-2 justify-content-between align-items-center">
                         <a href="./letter.html" class="link-custom">View Case Study</a>
-                        <a href="#" class=" d-flex align-items-center buttons">
-                            Live Link
-                            <img
-                                class=""
-                                style="width: 1.5rem;"
-                                src="../assets/images/arrow-up.svg"
-                                alt=""
-                            />
+                        <a href="#" class="d-flex align-items-center buttons">
+                            Demo
+                            <i class="fas fa-play ms-2"></i>
                         </a>
                     </div>
-                    
-    
                     </div>
                 </div>
-                </div>
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            </div>
+            
+            <div class="col-md-4">
             <div class="card-custom project rounded-4 bg-base shadow-effect">
                 <div class="card-custom-image rounded-4">
                 <img
-                    class="rounded-4 object-fit-cover game-cover"
+                    class="rounded-4 object-fit-cover game-cover img-fluid"
                     src="../assets/images/restaurant.png"
-                    alt=""
+                    alt="Master Chef Restaurant website design"
+                    loading="lazy"
+                    width="400"
+                    height="250"
                 />
                 </div>
                 <div class="card-custom-content p-4">
                 <h4 class="mb-3 pro-header">Restaurant Website</h4>
                 <p class="cardbody mb-4">
-                    Come and discover the difference at master chef restaurant. We can't wait to....
+                    Come and discover the difference at Master Chef Restaurant with an exquisite dining experience.
                 </p>
 
                 <div class="d-flex gap-2 justify-content-between align-items-center">
                     <a href="./restaurant.html" class="link-custom">View Case Study</a>
-                    <a href="https://sim-masterchef.vercel.app/" class=" d-flex align-items-center buttons">
+                    <a href="https://sim-masterchef.vercel.app/" class="d-flex align-items-center buttons" target="_blank" rel="noopener noreferrer">
                         Live Link
-                        <img
-                            class=""
-                            style="width: 1.5rem;"
-                            src="../assets/images/arrow-up.svg"
-                            alt=""
-                        />
+                        <i class="fas fa-external-link-alt ms-2"></i>
                     </a>
                 </div>
-                
-
                 </div>
             </div>
             </div>
 
       
 
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-md-4">
             <div class="card-custom project rounded-4 bg-base shadow-effect">
                 <div class="card-custom-image rounded-4">
                 <img
-                    class="rounded-4 object-fit-cover game-cover"
+                    class="rounded-4 object-fit-cover game-cover img-fluid"
                     src="../assets/images/AR-6.png"
-                    alt=""
+                    alt="Augmented Reality design project showcase"
+                    loading="lazy"
+                    width="400"
+                    height="250"
                 />
                 </div>
                 <div class="card-custom-content p-4">
                 <h4 class="mb-3 pro-header">Augmented Reality Design</h4>
                 <p class="cardbody mb-4">
-                    Dive into the world of augmented reality with the new Apple AR website.
+                    Dive into the world of augmented reality with innovative Apple AR website design.
                 </p>
 
                 <div class="d-flex gap-2 justify-content-between align-items-center">
                     <a href="./caseStudy.html" class="link-custom">View Case Study</a>
-                    <a href="#" class=" d-flex align-items-center buttons">
-                        Live Link
-                        <img
-                            class=""
-                            style="width: 1.5rem;"
-                            src="../assets/images/arrow-up.svg"
-                            alt=""
-                        />
+                    <a href="#" class="d-flex align-items-center buttons">
+                        Demo
+                        <i class="fas fa-play ms-2"></i>
                     </a>
                 </div>
-                
-
                 </div>
             </div>
             </div>
 
-            <div class="col-md-4" data-aos="fade-up">
+            <div class="col-md-4">
             <div class="card-custom project rounded-4 bg-base shadow-effect">
                 <div class="card-custom-image rounded-4">
                 <img
-                    class="rounded-4 object-fit-cover game-cover"
+                    class="rounded-4 object-fit-cover game-cover img-fluid"
                     src="../assets/images/kids-app-7.png"
-                    alt=""
+                    alt="Kids Gaming Savings App interface design"
+                    loading="lazy"
+                    width="400"
+                    height="250"
                 />
                 </div>
                 <div class="card-custom-content p-4">
-                <h4 class="mb-3 pro-header">Game: Kids Gaming Savings App</h4>
+                <h4 class="mb-3 pro-header">Kids Gaming Savings App</h4>
                 <p class="cardbody mb-4">
-                    Help kids to Make money with engaging activities by playing games and learning
+                    Help kids make money with engaging activities by playing games and learning financial literacy.
                 </p>
 
                 <div class="d-flex gap-2 justify-content-between align-items-center">
                     <a href="./caseStudy.html" class="link-custom">View Case Study</a>
-                    <a href="#" class=" d-flex align-items-center buttons">
-                        Live Link
-                        <img
-                            class=""
-                            style="width: 1.5rem;"
-                            src="../assets/images/arrow-up.svg"
-                            alt=""
-                        />
+                    <a href="#" class="d-flex align-items-center buttons">
+                        Demo
+                        <i class="fas fa-play ms-2"></i>
                     </a>
                 </div>
-                
-
                 </div>
             </div>
             </div>
             
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+            <div class="col-md-4">
                 <div class="card-custom project rounded-4 bg-base shadow-effect">
                 <div class="card-custom-image rounded-4">
                     <img
-                    class="rounded-4 object-fit-cover game-cover  img-fluid"
+                    class="rounded-4 object-fit-cover game-cover img-fluid"
                     src="../assets/images/hoa.png"
-                    alt=""
+                    alt="History of Africa educational project"
+                    loading="lazy"
+                    width="400"
+                    height="250"
                     />
                 </div>
                 <div class="card-custom-content p-4">
                     <h4 class="mb-3 pro-header">History of Africa Project</h4>
                     <p class="cardbody mb-4">                  
-                       Highlights of the significant events that occured in Africa between 1800DC to 1850DC
+                       Highlights of significant events that occurred in Africa between 1800-1850 AD.
                     </p>
 
                     <div class="d-flex gap-2 justify-content-between align-items-center">
                         <a href="./caseStudy.html" class="link-custom">View Case Study</a>
-                        <a href="#" class=" d-flex align-items-center buttons">
-                        Live Link
-                        <img
-                            class=""
-                            style="width: 1.5rem;"
-                            src="../assets/images/arrow-up.svg"
-                            alt=""
-                        />
+                        <a href="#" class="d-flex align-items-center buttons">
+                        Demo
+                        <i class="fas fa-play ms-2"></i>
                     </a>
                     </div>
-                    
-
                 </div>
                 </div>
             </div>
 
-            <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+            <div class="col-md-4">
                 <div class="card-custom project rounded-4 bg-base shadow-effect">
                   <div class="card-custom-image rounded-4">
                     <img
                       class="rounded-4 object-fit-cover game-cover img-fluid"
                       src="../assets/images/hotgist.png"
-                      alt=""
+                      alt="HotGist trending news application"
+                      loading="lazy"
+                      width="400"
+                      height="250"
                     />
                   </div>
                   <div class="card-custom-content p-4">
                     <h4 class="mb-3 pro-header">HotGist App</h4>
                     <p class="cardbody mb-4">
-                        Get Trending Hot Gists across the world from HotGistApp. Stay Connected, Stay Updated
+                        Get trending hot gists across the world from HotGistApp. Stay connected, stay updated.
                     </p>
   
                     <div class="d-flex gap-2 justify-content-between align-items-center">
                         <a href="./caseStudy.html" class="link-custom">View Case Study</a>
-                        <a href="#" class=" d-flex align-items-center buttons">
-                          Live Link
-                          <img
-                              class=""
-                              style="width: 1.5rem;"
-                              src="../assets/images/arrow-up.svg"
-                              alt=""
-                          />
+                        <a href="#" class="d-flex align-items-center buttons">
+                          Demo
+                          <i class="fas fa-play ms-2"></i>
                       </a>
                     </div>
-                    
-  
                   </div>
                 </div>
             </div>
@@ -511,8 +601,52 @@
         </div>
     </footer>
 
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/aos.js"></script>
-    <script src="../assets/js/main.js"></script>
+    <!-- Optimized JavaScript Loading -->
+    <script src="../assets/js/bootstrap.bundle.min.js" defer></script>
+    <script src="../assets/js/fast-project-search.js" defer></script>
+    
+    <!-- Load heavy scripts only when needed -->
+    <script>
+        // Lightweight performance optimizations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Optimize images
+            const images = document.querySelectorAll('img[loading="lazy"]');
+            images.forEach(img => {
+                img.addEventListener('load', () => {
+                    img.style.opacity = '1';
+                });
+            });
+            
+            // Add smooth hover effects
+            const cards = document.querySelectorAll('.card-custom');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = 'translateY(-5px)';
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'translateY(0)';
+                });
+            });
+        });
+        
+        // Load non-critical scripts after page load
+        window.addEventListener('load', () => {
+            // Load AOS only if needed for animations
+            if (window.innerWidth > 768) {
+                const aosScript = document.createElement('script');
+                aosScript.src = '../assets/js/aos.js';
+                aosScript.onload = () => {
+                    if (typeof AOS !== 'undefined') {
+                        AOS.init({
+                            duration: 800,
+                            once: true,
+                            offset: 100
+                        });
+                    }
+                };
+                document.head.appendChild(aosScript);
+            }
+        });
+    </script>
 </body>
 </html>
